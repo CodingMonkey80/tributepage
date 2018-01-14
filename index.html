@@ -1,42 +1,90 @@
-<body>
-<div class="container">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1 class="text-center">T. J. Dillashaw</h1>
-        <h2 class="text-center"><em>UFC Bantamweight Champion of The World</em></h2>
-        <div class="thumbnail-center"><img src="http://www.mmafrenzy.com/files/2017/09/93770411-750x340-1504708485.jpg" alt="UFC">
-          <div class="caption text-center">Tyler Jeffery Dillashaw is the current bantamweight champion of the world in the UFC. He goes by the nickname Killashaw and is arguably the p4p greatest bantamweight ever.</div>
-        </div>
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <h3 class="text-centre">T. J. Dillashaws UFC career:</h3>
-          <ul>
-            <li><strong>December 3, 2011</strong> - Suffers a loss to John Dodson during The Ultimate Fighter: Team Bisping vs. Team Miller Finale</li>
-            <li><strong>February 15, 2012</strong> - Defeats Walal Watson via decision</li>
-            <li><strong>July 11, 2012</strong> - Defeats Vaughan Lee via Neck Crank</li>
-            <li><strong>March 16, 2013</strong> - Finishes Issei Tamura by way of head kick and ground and pound</li>        
-            <li><strong>April 20, 2013</strong> - Deafeats Hugo Viana by TKO</li>        
-            <li><strong>October 9, 2013</strong> - Suffers his 2nd career loss to the Brazilian Raphael Assunção although both went on to win $50,000 for fight of the night</li>      
-            <li><strong>January 15, 2014</strong> - Defeats Mike Easton by unanimous decision.</li>        
-            <li><strong>May 24, 2014</strong> - A very calm and composed T. J. Dillashaw goes on to win the Bantamweight belt against the once p4p titleholder Renan Berao also netting the $50,000 bonus for ‘Performance of the night’.</li>
-            <li><strong>August 30, 2014</strong> - Yet again wins ‘Performance of the night’ for his TKO win over Joe Soto</li>    
-            <li><strong>July 25, 2015</strong> - In the rematch with Renan Berao T. J earns his 3rd ‘Performance of the night’ with his TKO victory in the headline event in Chicago.</li>        
-            <li><strong>January 17, 2016</strong> - Although strongly debated T. J. loses his title to former titleholder Dominick Cruz in the main event via split decision. Both fighters went on to win ‘Fight of the night’</li>        
-            <li><strong>July 9, 2016</strong> - After being denied an immediate rematch with Cruz, Dillashaw goes about his climb to the top by dissecting Raphael Assuncao in their rematch.</li>
-            <li><strong>December 30, 2016</strong> - Dillashaw proves unstoppable at UFC 207 in his performance against fellow title challenger John Lineker. Wins convincingly via unanimous decision and calls out the winner of Cruz vs Garbrandt.</li>
-            <li><strong>November 4, 2017</strong> - It’s fight night in MSG in New York UFC 217. There are 3 title fights on the cards including the return of former middleweight champion GSP. Many considered the bantamweight title fight between Dillashaw and Cody Garbrandt to be the real main event. For 2 years T. J. Dillashaw has been vilified and attacked for leaving Team Alpha Male so the bantamweight match between T. J. and his ex team mate Cody Garbrandt is almost poetic. The trash talk between both sides helped promote this fight and the genuine animosity between the pair has the world in hype mode. After being dropped at the end of the first round and wobbling back to his corner T. J. comes out and stays out of range of Garbrandts dangerous right hook. Garbrandt is dropped with a head kick but recovers quickly and then in a toe to toe exchange where either contender could have got knocked out, Dillashaw's fist connects with Garbandts jaw folding the title holder in half. Dillashaw with his killer instinct kneels on the dazed title holder and delivers a vicious ground and pound winning the title he should have never lost via KO and once again wins ‘Performance of the night’</li>  
-          </ul>
-          <h3>You should watch a breakdown of how T. J. Dillashaw won back the bantamweight title against Cody Garbrandt  <a href="https://www.youtube.com/watch?v=7rfwQfcA6m8" target="_blank">Here</a>.</h3>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+</head>
+
+<body ng-controller="mainCtrl as mainVm" ng-cloak>
+  <!--
+    Your HTML content here
+  -->
+
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <md-menu-container>
+      <md-button>Home</md-button>
+    </md-menu-container>
+  </md-sidenav>
+  <div class="main-content">
+    <div class="hero">
+<!--       <md-button class="main-menu md-primary" ng-click="mainVm.openLeftMenu()">
+        <md-icon>menu</md-icon>
+      </md-button> -->
+      <div class="hero-wrapper" layout="row" layout-align="center center">
+        <div layout="column">
+          <h1 class="md-display-3">T. J. Dillashaw</h1>
         </div>
       </div>
-    </div> 
+    </div>
+    <div class="section slanted">
+      <div class="section-wrapper" layout="row" layout-align="center center">
+        <div layout="column">
+          <div class="quote-block md-headline">
+            <md-icon class="rotate-180">format_quote</md-icon>
+            All you have to do is believe, baby, believe you're the best in the world and you'll get here.
+            <md-icon>format_quote</md-icon>
+          </div>
+        </div>
+      </div>
+      <div class="section-wrapper no-padding-top" layout="row" layout-align="center center">
+        <div class="history">
+          <h2 class="md-title">UFC Career<div class="border-shadow"></div></h2>
+          <md-grid-list class="history-grid" md-cols-gt-md="8" md-cols-md="8" md-cols-sm="6" md-cols-xs="4" md-cols="4" md-row-height="1:1" md-gutter="8px">
+            <md-grid-tile ng-repeat="tile in mainVm.historyTiles track by $index" md-colspan="2" md-rowspan="2" ng-style="{'background-image': 'url('+tile.image+')'}">
+
+              <div class="tile-contents" layout="column" layout-align="center center">
+                <h2>{{tile.year}}</h2>
+                <div class="md-body-2 tile-cover" layout="column" layout-align="center center">
+                  <h2>{{tile.year}}</h2>
+                  <div>{{tile.title}}</div>
+                </div>
+              </div>
+            </md-grid-tile>
+          </md-grid-list>
+        </div>
+      </div>
+    </div>
+    <div class="section image-window">
+
+    </div>
+    <div class="section footer">
+      <div class="section-wrapper" layout="row" layout-align="start center">
+        <div layout="column">
+          <div layout="row" layout-align="start center">
+            <div class="profile-image-border">
+              <div class="profile-image" src="https://pbs.twimg.com/profile_images/558109954561679360/j1f9DiJi.jpeg"></div>
+            </div>
+            <div class="md-headline">Watch a breakdown of the bout between T. J. & Cody Garbrandt <a href="https://www.youtube.com/watch?v=7rfwQfcA6m8" target="_blank">here</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="author md-body-2" layout-align="center center">
+        Made with
+        <md-icon>code</md-icon> by Coding Monkey <md-icon>copyright</md-icon>
+      </div>
+    </div>
   </div>
-  <footer class="text-center">
-    <hr>
-    <p>Written and coded by <a href="https://www.freecodecamp.org/codingmonkey80" target="_blank">Haydn Hadley (the Coding Monkey)</a>.</p>
-  </footer>  
-</div>  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
 
-
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
 </body>
+
 </html>
